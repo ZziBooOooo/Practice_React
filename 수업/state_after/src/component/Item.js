@@ -1,9 +1,9 @@
 import React from "react";
 
 const Item = ({ itemList, fn }) => {
-  /*   console.log(itemList);
+  console.log(itemList);
   console.log({ itemList });
-  console.log(fn); */
+  console.log(fn);
 
   let detail = () => {
     fn(itemList); /* 자식에 있는 modal함수가 실행된다. */

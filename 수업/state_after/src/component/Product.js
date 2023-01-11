@@ -7,6 +7,7 @@ const Product = () => {
   console.log("useState로 값을 변경하면 이쪽도 실행이된다.");
   /* 자식이 함수modal에 값을 부모에게 보냄 */
   let modal = (n) => {
+    console.log(n);
     const elModal = document.querySelector(".modal");
     elModal.classList.add("active");
     setTitle(n.title);

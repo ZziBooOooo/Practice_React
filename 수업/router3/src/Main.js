@@ -7,9 +7,12 @@ import { useParams } from "react-router-dom";
 const Main = () => {
   let { page } = useParams();
   console.log(page);
+  console.log({ page });
 
-  console.log(data[page]);
+  // console.log(data[page]);
   let datas = data[page];
+  console.log(data);
+  console.log(datas);
 
   /* map부분 -> 컴포넌트로 분리하기
   <div>에 대한 컨트롤은 해당 컴포넌트에서 가능하기 때문(렌더링과 상관없이?)
@@ -22,7 +25,7 @@ const Main = () => {
       <p id="title"> {page} </p>
       <div className="contents">
         {datas.map((data) => {
-          console.log(data);
+          // console.log(data);
           return (
             <div>
               <img src={data.photo}></img>

@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: rgb(223, 222, 222);
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(139, 179, 189);
+    height: 60%;
+    width: 400px;
+    border-radius: 18px;
+    box-shadow: 2px 3px 5px rgb(165, 165, 165);
+
+    p {
+      color: white;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: rgb(252, 246, 241);
+      text-shadow: 1px 1px 2px rgb(167, 167, 167);
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .list {
+      list-style: none;
+      background-color: rgb(252, 246, 241);
+      width: 70%;
+      height: 50%;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+
+      li {
+        // background-color: red;
+        margin: 5px;
+        height: 25px;
+        display: flex;
+        // justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        position: relative;
+
+        &:before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          display: inline-block;
+          background-color: rgb(252, 252, 252);
+          border: 1.5px solid rgb(152, 164, 167);
+          margin-right: 10px;
+          border-radius: 100%;
+        }
+
+        &.active {
+          color: #999;
+          &:before {
+            background-color: rgb(207, 215, 224);
+          }
+        }
+
+        button {
+          // margin-left: 100px;
+          right: 0;
+          position: absolute;
+          background-color: rgb(248, 196, 117);
+          border: none;
+          border-radius: 8px;
+          color: white;
+          padding: 3px 5px;
+        }
+      }
+    }
+    .write {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .inputText {
+        // width: 60%;
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-size: 16px;
+      }
+
+      .inputSubmit {
+        background-color: rgb(228, 108, 108);
+        border: none;
+        border-radius: 8px;
+        color: white;
+        padding: 3px 6px;
+      }
+    }
+  }
+}

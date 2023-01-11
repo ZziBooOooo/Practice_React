@@ -1,0 +1,50 @@
+header {
+  background-color: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header button {
+  margin: 0 1rem;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+  padding: 0;
+  width: 0;
+  overflow: hidden;
+}
+header nav a {
+  color: #fff;
+  padding: 1rem 0;
+}
+header.active nav {
+  width: 200px;
+}
+
+section {
+  width: 70%;
+  margin: 100px auto;
+  text-align: center;
+}
+section h2 {
+  font-size: 3rem;
+}
+section div {
+  display: flex;
+  justify-content: space-between;
+}
+section figure {
+  margin: 0;
+  width: 30%;
+}
+section img {
+  width: 100%;
+}/*# sourceMappingURL=Style.css.map */
