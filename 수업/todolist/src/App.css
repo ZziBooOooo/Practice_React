@@ -64,7 +64,7 @@
 .App article .list li.active:before {
   background-color: rgb(207, 215, 224);
 }
-.App article .list li button {
+.App article .list li .delBtn {
   right: 0;
   position: absolute;
   background-color: rgb(248, 196, 117);
@@ -72,6 +72,17 @@
   border-radius: 8px;
   color: white;
   padding: 3px 5px;
+  box-shadow: 1px 2px 3px rgb(211, 211, 211);
+}
+.App article .list li .editBtn {
+  right: 15%;
+  position: absolute;
+  background-color: rgb(169, 207, 138);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 3px 5px;
+  box-shadow: 1px 2px 3px rgb(211, 211, 211);
 }
 .App article .write {
   width: 100%;

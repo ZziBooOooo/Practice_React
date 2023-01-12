@@ -59,7 +59,9 @@ function App() {
             data.map((obj, key) => {
               return (
                 <li
-                  ref={(el) => (elItems.current[key] = el)}
+                  ref={(el) =>
+                    (elItems.current[key] = el)
+                  } /* ref에서 함수선언 후 인자는 해당 html태그를 뜻한다! */
                   onClick={state}
                   key={obj.num}
                 >
