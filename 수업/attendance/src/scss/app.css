@@ -1,0 +1,130 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: rgb(228, 221, 214);
+}
+.App .contentBox {
+  padding: 30px;
+  width: 350px;
+  height: 600px;
+  background-color: rgb(166, 184, 139);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 2px 2px 3px rgb(145, 148, 139);
+  position: relative;
+}
+.App .addBtn {
+  background-color: rgb(255, 247, 231);
+  color: rgb(86, 95, 75);
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-size: 24px;
+  width: 40px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 2px 2px rgb(145, 148, 139);
+  cursor: pointer;
+  right: 12%;
+  position: absolute;
+}
+.App .personNum {
+  color: rgb(255, 247, 231);
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  left: 12%;
+  top: 15%;
+}
+.App .listBox {
+  background-color: rgb(255, 247, 231);
+  border-radius: 12px;
+  width: 90%;
+  height: 70%;
+  margin-top: 160px;
+}
+.App .listBox ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+.App .listBox ul li {
+  width: 90%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.App .listBox ul li p {
+  font-size: 16px;
+}
+.App .listBox ul li .btnBox button {
+  border: none;
+  border-radius: 3px;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+.App .listBox ul li .btnBox .editBtn {
+  background-color: rgb(245, 181, 211);
+}
+.App .listBox ul li .btnBox .deleteBtn {
+  margin-left: 10px;
+  background-color: rgb(247, 210, 141);
+}
+.App .popupBox {
+  display: none;
+}
+.App .popupBox.show {
+  position: absolute;
+  background-color: rgba(17, 17, 17, 0.767);
+  top: 40%;
+  width: 280px;
+  height: 200px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 2px 2px rgb(145, 148, 139);
+}
+.App .popupBox.show .popupTitle {
+  margin-top: 30px;
+  color: rgb(255, 247, 231);
+  font-weight: bold;
+  font-size: 18px;
+}
+.App .popupBox.show form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.App .popupBox.show form input {
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 10px;
+}
+.App .popupBox.show form input:focus {
+  border: none;
+}
+.App .popupBox.show form .saveBtn {
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.App .popupBox.show .closeBtn {
+  color: white;
+  position: absolute;
+  right: 9%;
+  cursor: pointer;
+}/*# sourceMappingURL=app.css.map */
